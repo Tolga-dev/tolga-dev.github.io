@@ -1,0 +1,161 @@
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row sidebar">
+        <aside class="col-xs-12 col-sm-6 col-md-3 widget links">
+          <div class="title-block">
+            <h3 class="title">SİTE HARİTASI</h3>
+          </div>
+          <nav>
+            <ul>
+
+              <li><a href="arapca.html" title="Anasayfa"><i class="fa fa-angle-right"></i>&nbsp;Anasayfa</a></li>
+
+              <li><a href="hakkimizda.html" title="Hakkımızda"><i class="fa fa-angle-right"></i>&nbsp;Hakkımızda</a>
+              </li>
+
+              <li><a href="projeler.html" title="Projeler"><i class="fa fa-angle-right"></i>&nbsp;Projeler</a></li>
+
+              <li><a href="iletisim.html" title="İletişim"><i class="fa fa-angle-right"></i>&nbsp;İletişim</a></li>
+
+            </ul>
+          </nav>
+        </aside>
+        <aside class="col-xs-12 col-sm-6 col-md-3 widget links">
+          <div class="title-block">
+            <h3 class="title">MÜŞTERİ HİZMETLERİ</h3>
+          </div>
+          <nav>
+            <ul>
+
+              <li><a href="mesafeli-satis-sozlesmesi.html" title="Mesafeli Satış Sözleşmesi"><i
+                class="fa fa-angle-right"></i>&nbsp;Mesafeli Satış Sözleşmesi</a></li>
+
+              <li><a href="uyelik-sozlesmesi.html" title="Üyelik Sözleşmesi"><i class="fa fa-angle-right"></i>&nbsp;Üyelik
+                Sözleşmesi</a></li>
+
+              <li><a href="garanti-ve-iade-kosullari.html" title="Garanti ve İade Koşulları"><i
+                class="fa fa-angle-right"></i>&nbsp;Garanti ve İade Koşulları</a></li>
+
+              <li><a href="sikca-sorulan-sorular.html" title="Sıkça Sorulan Sorular"><i class="fa fa-angle-right"></i>&nbsp;Sıkça
+                Sorulan Sorular</a></li>
+
+            </ul>
+          </nav>
+        </aside>
+        <aside class="col-xs-12 col-sm-6 col-md-3 widget newsletter">
+          <div class="title-block">
+            <h3 class="title">e-Bülten</h3>
+          </div>
+          <div>
+            <p id="mail_message">e-Bültenimize üye olunuz</p>
+            <div class="clearfix"></div>
+            <div style="position:relative;margin:5px 0 0;" class="alphForceName">
+              <input id="mail_data" class="form-control" type="email">
+              <button id="mail_button" class="submit" type="button"><span
+                class="glyphicon glyphicon-arrow-right"></span></button>
+            </div>
+          </div>
+        </aside>
+
+        <script>
+          $('.alphForceName').on("cut copy paste", function (e) {
+            e.preventDefault();
+          });
+
+          $('.alphForceName').on('keypress', function (e) {
+            var blockSpecialRegex = /[~`'"#$%^()={}[\];<>\/]/;
+            var key = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+            if (blockSpecialRegex.test(key)) {
+              e.preventDefault();
+              return false;
+            }
+          });
+
+          var OAwaitMessage = 'Lütfen bekleyiniz...';
+          var OAmailMessage = 'e-Mailinizi giriniz!..';
+
+          var OAmailResult = $('#mail_message');
+          var OAmailData = $('#mail_data');
+          var OAmailSend = $('#mail_button');
+
+          OAmailSend.off('click').on('click', function () {
+            var obj = encodeURIComponent(OAmailData.val());
+
+            if (obj != '') {
+              OAmailResult.html('<font class="OAwait">' + OAwaitMessage + '</font>');
+
+              $.ajax({
+                url: 'https://www.kamsansandalye.com/OAsystem/bulletinMembers.asp?token=' + $.now() + '&mail_data=' + obj,
+                type: 'POST',
+                success: function (data) {
+                  OAmailResult.html(data);
+                }
+              });
+            } else {
+              OAmailResult.html('<font class="OAerror">' + OAmailMessage + '</font>');
+              OAmailData.focus();
+            }
+          });
+        </script>
+        <aside class="col-xs-12 col-sm-6 col-md-3 widget social">
+          <div class="title-block">
+            <h3 class="title">Sosyal Medya</h3>
+          </div>
+
+          <p>Bizi sosyal medyada takip edin</p>
+          <a rel="nofollow" class="sbtnf sbtnf-rounded color color-hover icon-facebook" title="facebook"
+             href="arapca.html#" target="_blank"></a><a rel="nofollow"
+                                                        class="sbtnf sbtnf-rounded color color-hover icon-twitter"
+                                                        title="twitter" href="arapca.html#" target="_blank"></a><a
+          rel="nofollow" class="sbtnf sbtnf-rounded color color-hover icon-gplus" title="gplus" href="arapca.html#"
+          target="_blank"></a><a rel="nofollow" class="sbtnf sbtnf-rounded color color-hover icon-instagram"
+                                 title="instagram" href="arapca.html#" target="_blank"></a>
+          <div class="clearfix"></div>
+        </aside>
+
+        <div class="clearfix"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="copyright col-xs-12 col-sm-9 col-md-9">
+          Copyright &copy; 2025, <a href="arapca.html" title="Kamsan Sandalye">LINK</a> | Tüm
+          Hakları Saklıdır.
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3">
+          <a href="arapca.html#" class="up" title="up">
+            <span class="glyphicon glyphicon-arrow-up"></span>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div id="kmkCopyright" class="col-xs-12 col-sm-12 col-md-12">
+          <div class="text-center" id="kmkCopyright"><strong><a href="https://www.kmk.net.tr/" target="_blank"
+                                                                class="kmk">TOLGA<sup>®</sup></a>&nbsp;|&nbsp;</strong><a
+            href="https://www.kmk.net.tr/e-ihracat" target="_blank">e-ihracat</a> DONE
+          </div>
+          <style>#kmkCopyright {
+            color: #171a29 !important;
+            padding: 10px 0 !important;
+            font-size: 12px;
+          }
+
+          #kmkCopyright a {
+            color: #171a29 !important;
+            text-decoration: none !important;
+          }
+
+          #kmkCopyright .kmk {
+            font-size: 14px;
+          }</style>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

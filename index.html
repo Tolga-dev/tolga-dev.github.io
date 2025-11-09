@@ -1,33 +1,556 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+  <title>NAME Sandalye</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="NAME Sandalye"/>
+  <meta name="keywords" content="NAME Sandalye"/>
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
+  <meta property="og:title" content="Kamsan Sandalye"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.kamsansandalye.com/">
+  <meta property="og:locale" content="tr_TR"/>
+  <meta property="og:image" content="http://www.kamsansandalye.com/logos/metaOGImage.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:type" content="image/jpg"/>
+  <meta property="og:description" content="NAME Sandalye">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="googlebot" content="NOODP"/>
+  <meta name="robots" content="all"/>
+  <meta name="robots" content="follow"/>
+  <meta name="robots" content="index"/>
+  <meta name="revisit-after" content="1 Day"/>
+  <link rel="apple-touch-icon" href="upload/logos/apple-icon-touch.png">
+  <link rel="shortcut icon" href="upload/logos/favicon.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+
+  <link rel="canonical" href="arapca.html"/>
+
+  <link rel="stylesheet" href="theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="theme/css/style.css">
+  <link rel="stylesheet" href="theme/css/customizer/custom_design.css">
+
+  <link rel="stylesheet" href="theme/css/color/blue1.css">
+
+  <link rel="stylesheet" href="theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="theme/css/smartSearch.css">
+  <link rel="stylesheet" href="theme/css/prodAdditional.css">
+
+  <script src="theme/component/jquery-3.6.2.min.js"></script>
+  <script src="theme/component/jquery-migrate-3.4.0.min.js"></script>
+  <script src="theme/component/jquery-migrate-3.4.0.min.js"></script>
+  <script src="theme/js/main.js"></script>
+
+  <script>
+    var pageLink = "", pageMode = "home", pageLang = "1", pageIdent = "kamsan", pageSys = "progressive";
+  </script>
+
 </head>
+<body class="background-opacity prg-home user-not-logged load langtr">
+<div class="body-overlay"></div>
+<div class="page-box">
+  <div class="page-box-content">
 
-<body>
+    <div id="top-box">
+      <div class="top-box-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-9 col-sm-5 top-box-left">
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+              <div class="btn-group language btn-select">
+                <a rel="nofollow" class="btn dropdown-toggle btn-default" role="button" data-toggle="dropdown"
+                   href="arapca.html#" title="language">
+                  <img src="theme/language/langTR.png" alt="Türkçe">Türkçe
+                  &nbsp;<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" style="padding-top:0;">
+                  <li><a rel="nofollow" data-language="2" href="english.html" title="English"><img
+                    src="theme/language/langEN.png" alt="English">English</a></li>
+                  <li><a rel="nofollow" data-language="6" href="arapca.html" title="العربية"><img
+                    src="theme/language/langAR.png" alt="العربية">العربية</a></li>
+                </ul>
+              </div>
+              <script>
+                $(function () {
+                  $('.language .dropdown-menu li a').on('click', function () {
+                    var cLangId = $(this).attr('data-language');
+
+                    $.ajax({
+                      url: '/includes/system/changeLangCurrency.asp',
+                      type: 'POST',
+                      data: 'token=' + $.now() + '&curr=' + cLangId,
+                      success: function (data, result) {
+                        if (data == 'success') ;
+                      },
+                      error: function (XMLHttpRequest, textStatus, errorThrown) {
+                      }
+                    })
+                  });
+                })
+              </script>
+
+              <div class="btn-group currency btn-select">
+                <a class="btn dropdown-toggle btn-default" role="button" data-toggle="dropdown" href="arapca.html#"
+                   title="TL - Türk Lirası">
+                  <span class="currency-content">TL<span class="hidden-xs"> - Türk Lirası</span></span> &nbsp;<span
+                  class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" style="padding-top:0;">
+                  <li><a class="currency-link" data-currency="2" href="arapca.html#" onclick="return false;"
+                         title="currency">USD<span class="hidden-xs"> - Dolar</span></a></li>
+                  <li><a class="currency-link" data-currency="3" href="arapca.html#" onclick="return false;"
+                         title="currency">EUR<span class="hidden-xs"> - Euro</span></a></li>
+                  <li><a class="currency-link" data-currency="6" href="arapca.html#" onclick="return false;"
+                         title="currency">RUB<span class="hidden-xs"> - Ruble</span></a></li>
+                  <li><a class="currency-link" data-currency="7" href="arapca.html#" onclick="return false;"
+                         title="currency">SAR<span class="hidden-xs"> - Riyal</span></a></li>
+                </ul>
+              </div>
+
+              <script>
+                $(function () {
+                  $('.currency-link').on('click', function () {
+                    var curr = $(this).attr('data-currency');
+
+                    $.ajax({
+                      url: '/includes/system/changeCurrency.asp',
+                      type: 'POST',
+                      data: 'token=' + $.now() + '&curr=' + curr,
+                      success: function (data, result) {
+                        if (data == 'success') window.location.reload();
+                      },
+                      error: function (XMLHttpRequest, textStatus, errorThrown) {
+                      }
+                    })
+                  });
+                })
+              </script>
+
+            </div>
+            <div class="col-xs-3 col-sm-7 top-box-right">
+
+              <div class="navbar navbar-inverse top-navbar top-navbar-right" role="navigation">
+                <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse"
+                        data-target=".top-navbar .navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <div id="header"></div>
+
+    <link rel="stylesheet" href="theme/css/royalslider/royalslider.css">
+    <link rel="stylesheet"
+          href="theme/css/royalslider/skin/minimal-white/rs-minimal-white.css">
+    <script src="theme/component/jquery.royalslider.min.js"></script>
+
+    <script src="theme/component/royalslider-custom.js"></script>
+    <div class="slider royal-slider royalSlider heroSlider rsDefaultInv rsMinW load">
+      <div class="rsContent"><img class="rsImg" src="upload/bannersContent/3.png" alt="" width="1920" height="920"
+                                  style="width:" 1920";height="920" />
+        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10"
+             data-move-effect="bottom" data-speed="200"></div>
+      </div>
+      <div class="rsContent"><img class="rsImg" src="upload/bannersContent/1.png" alt="" width="1920" height="920"
+                                  style="width:" 1920";height="920" />
+        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10"
+             data-move-effect="bottom" data-speed="200"></div>
+      </div>
+      <div class="rsContent"><img class="rsImg" src="upload/bannersContent/5.png" alt="" width="1920" height="920"
+                                  style="width:" 1920";height="920" />
+        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10"
+             data-move-effect="bottom" data-speed="200"></div>
+      </div>
+      <div class="rsContent"><img class="rsImg" src="upload/bannersContent/4.png" alt="" width="1920" height="920"
+                                  style="width:" 1920";height="920" />
+        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10"
+             data-move-effect="bottom" data-speed="200"></div>
+      </div>
+      <div class="rsContent"><img class="rsImg" src="upload/bannersContent/2.png" alt="" width="1920" height="920"
+                                  style="width:" 1920";height="920" />
+        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10"
+             data-move-effect="bottom" data-speed="200"></div>
+      </div>
+      <div class="rsContent"><img class="rsImg" src="upload/bannersContent/banner_5.jpg" alt="" width="1920"
+                                  height="920" style="width:" 1920";height="920" />
+        <div class="infoBlock infoBlockLeftBlack rsABlock" data-fade-effect="" data-move-offset="10"
+             data-move-effect="bottom" data-speed="200"></div>
+      </div>
+    </div>
+
+
+    <div id="main"></div>
+    <div class="clearfix"></div>
+
+    <script>
+      $(document).ready(function () {
+        if ($.trim($('#main .container').html()) == '') {
+          $('#main').hide()
+        }
+        ;
+      });
+    </script>
+  </div>
+
+  <div id="footer"></div>
+
+  <div class="clearfix"></div>
+</div>
+
+<script>
+  addCookieBar();
+</script>
+
+<div class="cookies-box">
+  <h6>Çerez Kullanımı</h6>
+  <p>Çerezler (cookie), NAME web sitesini ve hizmetlerimizi daha etkin bir şekilde sunmamızı
+    sağlamaktadır. Çerezlerle ilgili detaylı bilgi için <a href="gizlilik-politikasi.html"> Gizlilik Politikamızı</a>
+    ziyaret edebilirsiniz. </p>
+  <span class="modalboxClose">X</span>
+</div>
+
+
+<script src="theme/component/jquery.cookie.js" type="text/javascript"></script>
+<script>
+  BlockTestStatus();
+  addNavbarLiParent();
+  addNavbarPointerNone();
+</script>
+
+<link rel="stylesheet" href="theme/css/responsive.css">
+<link rel="stylesheet" href="theme/css/ie/ie.css">
+<link rel="stylesheet" href="theme/css/jquery.scrollbar.css">
+<link rel="stylesheet" href="theme/css/buttons/buttons.css">
+<link rel="stylesheet" href="theme/css/buttons/social-icons.css">
+<link rel="stylesheet" href="theme/css/settings.css">
+
+<link rel="stylesheet" href="theme/css/jslider.css">
+<link rel="stylesheet" href="theme/css/jquery.fancybox.css">
+<link rel="stylesheet" href="theme/css/animate.css">
+<link rel="stylesheet" href="theme/css/video-js.min.css">
+<link rel="stylesheet" href="theme/css/datepicker.css">
+
+<script src="theme/component/bootstrap-3.4.1.min.js"></script>
+<script src="theme/component/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="theme/component/isotope.pkgd.min.js"></script>
+<script src="theme/component/jquery.easing.1.3.js"></script>
+
+<script src="theme/component/jquery.touchSwipe.min.js"></script>
+<script src="theme/component/jquery.selectBox.min.js"></script>
+
+<script src="theme/component/jquery.elevateZoom-3.0.8.min.js"></script>
+<script src="theme/component/jquery.imagesloaded.min.js"></script>
+<script src="theme/component/jquery.appear.js"></script>
+<script src="theme/component/jquery.fancybox.pack.js"></script>
+<script src="theme/component/jquery.knob.js"></script>
+<script src="theme/component/jquery.stellar.min.js"></script>
+<script src="theme/component/SmoothScroll.js"></script>
+<script src="theme/component/country.js"></script>
+<script src="theme/component/spin.min.js"></script>
+<script src="theme/component/ladda.min.js"></script>
+<script src="theme/component/masonry.pkgd.min.js"></script>
+<script src="theme/component/morris.min.js"></script>
+<script src="theme/component/raphael.min.js"></script>
+<script src="theme/component/video.js"></script>
+<script src="theme/component/pixastic.custom.js"></script>
+
+<script src="theme/component/layerslider/greensock.js"></script>
+<script src="theme/component/layerslider/layerslider.transitions.js"></script>
+<script
+  src="theme/component/layerslider/layerslider.kreaturamedia.jquery.js"></script>
+
+<script src="theme/component/jquery.lazyload.js"></script>
+
+<script src="theme/component/bootstrapValidator.min.js"></script>
+<script src="theme/component/jquery.price_format.1.7.js"></script>
+<script src="theme/component/bootstrap-datepicker.js"></script>
+<script src="theme/component/jquery.scrollbar.min.js"></script>
+<script src="theme/component/main.js"></script>
+
+<div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a id="modalMessage" href="arapca.html#" class="close" data-dismiss="modal" aria-hidden="true"
+           title="Kapat">×</a>
+        <div class="title-box">
+          <h4 class="title">Ödeme Yap</h4>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="overlay"></div>
+        <div id="paymentHolder"></div>
+      </div>
+      <div class="modal-footer">
+        <span id="payment-message"></span>
+        <button type="button" id="paymentCC" class="btn btn-sm btn-primary" onclick="completePayment();"><i
+          class="fa fa-credit-card"></i> Tamamla
+        </button>
+        <button type="button" id="paymentClose" class="btn btn-sm btn-inverse" data-dismiss="modal">Kapat</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  function getCCPayment(key, prc, com) {
+    $('#modalPayment .modal-body').addClass('load');
+    $('#modalPayment').modal('show');
+
+    $('#modalPayment #paymentHolder').html('').load('/includes/theme/progressive/paymentProcess.asp?token=' + $.now() + '&paymentAction=getCCPayment&processPageName=' + encodeURIComponent("") + '&processKey=' + encodeURIComponent(key) + '&processPrice=' + encodeURIComponent(prc) + '&processComment=' + encodeURIComponent(com), function () {
+      var timerID = setInterval(function () {
+        clearInterval(timerID);
+        $('#modalPayment .modal-body').removeClass('load');
+        $('#cardDataName').focus();
+      }, 500);
+    })
+  }
+
+  $('#modalPayment').on('hide.bs.modal', function (e) {
+    if (typeof paymentNotComplete == 'function') paymentNotComplete();
+  });
+</script>
+
+<div class="modal modal-center fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="arapca.html#" class="close" data-dismiss="modal" aria-hidden="true" title="Kapat">×</a>
+        <div class="title-box">
+          <h4 class="title">Sipariş</h4>
+        </div>
+      </div>
+      <div class="modal-body">
+        Sitemizden sipariş verebilmeniz için üye girişi yapmanız gerekmektedir...
+      </div>
+      <div class="modal-footer">
+        <a href="giris.html" class="btn btn-sm btn-primary">Üye Girişi / Yeni Üye</a>
+        <a href="arapca.html#" class="btn btn-sm btn-warning" data-dismiss="modal">Kapat</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-center fade" id="modalWishlist" tabindex="-1" role="dialog" aria-labelledby="modalWishlistLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="arapca.html#" class="close" data-dismiss="modal" aria-hidden="true" title="Kapat">×</a>
+        <div class="title-box">
+          <h4 class="title">Favorilerim</h4>
+        </div>
+      </div>
+      <div class="modal-body">
+        Favorilerim özelliğini kullanabilmeniz için üye girişi yapmanız gerekmektedir...
+      </div>
+      <div class="modal-footer">
+        <a href="arapca.html#" class="btn btn-sm btn-warning" data-dismiss="modal">Kapat</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal-center fade" id="modalAlert" tabindex="-1" role="dialog" aria-labelledby="modalAlertLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="arapca.html#" class="close" data-dismiss="modal" aria-hidden="true" title="Kapat">×</a>
+        <div class="title-box">
+          <h4 class="title" id="modalAlertTitle">&nbsp;</h4>
+        </div>
+      </div>
+      <div class="modal-body" id="modalAlertBody"></div>
+      <div class="modal-footer">
+        <a href="arapca.html#" class="btn btn-sm btn-warning" data-dismiss="modal">Kapat</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $('.alphForceName').on("cut copy paste", function (e) {
+    e.preventDefault();
+  });
+
+  $('.alphForceName').on('keypress', function (e) {
+    var blockSpecialRegex = /[~`'"#$%^()={}[\];<>]/;
+    var key = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+    if (blockSpecialRegex.test(key)) {
+      e.preventDefault();
+      return false;
+    }
+  });
+
+  var objA, objB, objC, objD, objE, objF, objG, objH, objI, objJ, objK;
+  var sTime = new Date().getTime(), jTime, wTime, cLog = 'Build OA B2C System for Theme Progressive';
+
+  if (typeof (console) === 'undefined') {
+    var console = {}
+    console.log = console.error = console.info = console.debug = console.warn = console.trace = console.dir = console.dirxml = console.group = console.groupEnd = console.time = console.timeEnd = console.assert = console.profile = console.groupCollapsed = function () {
+    };
+  }
+
+  $(document).ready(function () {
+    jTime = parseFloat((new Date().getTime() - sTime) / 1000).toFixed(8);
+
+    var ping = setInterval(function () {
+      $.ajax({
+        url: '/OAsystem/ping.asp', type: 'POST', data: 'token=' + $.now(), success: function (data, result) {
+        }
+      })
+    }, 300000);
+  });
+
+  $(window).load(function () {
+    wTime = parseFloat((new Date().getTime() - sTime) / 1000).toFixed(8);
+
+    cLog += '\nOA Theme System: ' + pageSys;
+    cLog += '\nCurrent page link: ' + pageLink;
+    cLog += '\nCurrent page active mode: ' + pageMode;
+    cLog += '\nCurrent page language: ' + pageLang;
+    cLog += "\njScript execute time: " + jTime;
+    cLog += "\nWindow loading time: " + wTime;
+    cLog += '\nvScript execute time: 0.10937500';
+
+    cLog += '\nHeader content execute time: 0.03125000';
+
+    cLog += '\nMain content execute time: 0.03125000';
+
+    console.groupCollapsed('OA B2C System Logs');
+    console.info(cLog);
+    console.groupEnd();
+  });
+
+  function showMessages(objA, objB, objC, objD, objG) {
+
+    objE = objA.parent().parent().parent();
+
+    if (objE.hasClass('default')) {
+      objE = objE.find('.messages');
+    } else {
+      objE = objE.parent().find('.messages');
+    }
+
+    if (objE.length) {
+      objE.html(objB);
+      objE.animate({top: 0}, 500);
+      var timerID = setInterval(function () {
+        clearInterval(timerID);
+        objE.animate({top: -30}, 800);
+        objC.removeClass('fa-refresh').removeClass('fa-spin').addClass(objD);
+        if (objG != '') {
+          $('.cartCount').html(objG);
+
+          cartRefresh();
+
+        }
+      }, 800);
+      return false;
+    }
+
+    $('.alert-holder').append('<div class="alert alert-success">Ürün sepetinize eklendi...</div>')
+    var timerID = setInterval(function () {
+      clearInterval(timerID);
+      objC.removeClass('fa-refresh').removeClass('fa-spin').addClass(objD);
+      $('.cartCount').html(objG);
+
+      $('.alert-holder').html('');
+
+      cartRefresh();
+
+    }, 800);
+  }
+
+  $('#modalWishlist').on('show.bs.modal', function (e) {
+    $(this).css('z-index', '1100');
+    $('.modal-backdrop').css('z-index', '1080');
+  });
+
+  $('#modalWishlist').on('hidden.bs.modal', function (e) {
+    $('.modal-backdrop').css('z-index', '1040');
+  });
+</script>
+
+<div class="modal fade" id="modalShoppingCart" tabindex="-1" role="dialog" aria-labelledby="modalShoppingCartLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a id="modalMessage" href="arapca.html#" class="close" data-dismiss="modal" aria-hidden="true"
+           title="Kapat">×</a>
+        <div class="title-box">
+          <h4 class="title">Bilgilendirme</h4>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p align="center" id="modalShoppingCartBody"></p>
+      </div>
+      <div class="modal-footer">
+        <a href="arapca.html#" class="btn btn-sm btn-rounded" id="cartClose"><i class="fa fa-angle-left"></i> Alışverişe
+          Devam Et</a>
+        <a href="arapca.html#" class="btn btn-sm btn-success" id="goToMyCart">Sepete Git</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(function () {
+    $('#cartClose').click(function () {
+      $('#modalShoppingCart').modal('hide');
+    });
+
+    $('#goToMyCart').click(function () {
+      $('#modalShoppingCart').modal('hide');
+      var timerID = setInterval(function () {
+        clearInterval(timerID);
+
+        window.location = '/sepetim';
+      }, 800);
+    });
+  });
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function () {
+    $("img.lazy").lazyload({
+      delay: 5000,
+      threshold: 200,
+      effect: "fadeIn",
+      effectTime: '3000',
+      skip_invisible: true,
+      onError: function (element) {
+        console.log('error loading ' + element.data('src'));
+      }
+    });
+    $(window).scroll();
+  });
+</script>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function () {
+    $('.carousel').carousel({
+      interval: 15000
+    })
+  });
+</script>
 
 </body>
-
 </html>

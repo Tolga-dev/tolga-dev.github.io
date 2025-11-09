@@ -1,0 +1,37 @@
+.similar-products{display:block;}
+.d-flex{display:flex;}
+.similar-products p{margin:0; font-weight: bold; font-size: 14px;}
+.similar-products .item{width:50px; height:50px; display:inline-block; overflow:hidden; margin: 10px 5px; position:relative;}
+.similar-products .item:first-child{margin-left:0;}
+.similar-products .item:last-child{margin-right:0;}
+.similar-products .item a{display:block; width:100%; height: 100%;border: 1px solid #dedede; -webkit-transition: all 0.2s linear;transition: all 0.2s linear;}
+.similar-products .item a:hover{border: 1px solid #000000;-webkit-transition: all 0.2s linear; transition: all 0.2s linear;}
+.similar-products .item.active a:before{content:""; display:block; position:absolute; width:100%; height:100%;background: rgba(0,0,0,0.5) url(/theme/progressive/img/check_icon.svg) no-repeat;background-size: 25px;background-position: center;}
+.similar-products .item img{width:100%; height:auto;}
+
+.square-variant{display:block;}
+.square-variant p{margin:0; font-weight: bold; font-size: 14px;}
+.square-variant .variant-item{width:40px; height:40px; display:inline-block; margin: 10px 5px; position:relative; background-color:#FFF; border:1px solid #dedede;}
+.square-variant .variant-item.active{border:1px solid #adadad;}
+.square-variant .variant-item:focus{border:1px solid #adadad !important;}
+.square-variant .variant-item:first-child{margin-left:0;}
+.square-variant .variant-item:last-child{margin-right:0;}
+.square-variant .variant-item a{display:block; width:100%;height:100%;border: 1px solid #dedede;text-align: center;line-height: 40px;text-decoration: none;color: #000;font-size: 15px; -webkit-transition: all 0.2s linear;transition: all 0.2s linear;}
+.square-variant .variant-item a:hover{border: 1px solid #000000;-webkit-transition: all 0.2s linear; transition: all 0.2s linear;}
+
+.square-variant .variant-item.colored{background:#06F; border:none; color:transparent;}
+.square-variant .variant-item.colored.active{border: 1px solid #fff;}
+
+.square-variant .error {
+    display: none;
+    position: absolute;
+    font-size: 21px;
+    line-height: 30px;
+    padding: 0 6px;
+    background-color: #a4001b;
+    color: #fff;
+    margin-left: -2px;
+    border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    -webkit-border-radius: 0 3px 3px 0;
+}

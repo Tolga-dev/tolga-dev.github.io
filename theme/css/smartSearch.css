@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+.search-active{overflow:visible !important;}
+/* Formatting search box */
+.search-box{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  height:100%;
+}
+.search-box input[type="text"]{
+  height: 32px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.result{
+  position: absolute;        
+  z-index: 999;
+  top: 100%;
+  left: 0;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color:#fff;
+}
+.search-box input[type="text"], .result{
+  width: 100%;
+  box-sizing: border-box;
+}
+.result p{
+  margin: 0;
+  padding: 7px 10px;
+  border-top: none;
+  cursor: pointer;
+}
+.result p:hover{
+  background: #f2f2f2;
+}
